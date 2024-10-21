@@ -1,0 +1,73 @@
+@media (min-width: 1025px) and (max-width: 1440px) {
+  // H E A D E R //
+
+  header {
+    .container {
+      li:hover {
+        font-weight: 700;
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: 0.2s ease-in-out;
+      }
+      li.call:hover {
+        font-weight: 800;
+        background-color: $black-hover;
+        transform: scale(1.05);
+        transition: 0.2s ease-in-out;
+      }
+    }
+  }
+
+  // F I R S T - S E C T I O N //
+
+  .first-section {
+    .container {
+      .first-text-button {
+        span:hover {
+          cursor: pointer;
+          background-color: $red-hover;
+          transform: scale(1.05);
+          transition: 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+
+  // S E C O N D - S E C T I O N //
+
+  .second-section .container {
+    .text-pt1 {
+      .red-span:hover {
+        cursor: pointer;
+        color: $red-hover;
+        font-size: 18.5px;
+        transform: scale(1.05);
+        transition: 0.2s ease-in-out;
+        &::after {
+          cursor: pointer;
+          background-color: $red-hover;
+          transform: scale(1.05);
+          transition: 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+
+    // T H I R D - S E C T I O N //
+
+    // Animations faites dans _third-section car JS.
+
+    // F O O T E R //
+
+    .footer {
+      .container {
+        span:hover {
+          cursor: pointer;
+          background-color: $red-hover;
+          transform: scale(1.05);
+          transition: 0.2s ease-in-out;
+          
+        }
+      }
+    }
+}

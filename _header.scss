@@ -1,0 +1,180 @@
+header{
+  @include body-set;
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 45px 0;
+    background-color: $white;
+    z-index: 2;
+    #toggle {
+      display: none;
+      &:checked ~ nav {
+        top: 72.5px;
+        opacity: 1;
+      }
+      &:checked ~ .hamburger span {
+        transform: rotate(45deg);
+        &:before {
+        transform: rotate(90deg);
+        top: 0;
+        }
+        &:after {
+        display: none;
+        }
+      }
+    }
+    .hamburger {
+      display: inline-flex;
+      height: 30px;
+      width: 30px;
+      z-index: 2;
+      place-items: center;
+      z-index:2;
+      span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background-color: $txt-black;
+        position: relative;
+        &:after,
+        &:before {
+          position: absolute;
+          content: "";
+          display: block;
+          width: 28px;
+          height: 3px;
+          background-color: $txt-black;
+        }
+        &:before {
+          top: -7px;
+        }
+        &:after {
+          bottom: -7px;
+        }
+      }
+    }
+    nav {
+      display:none;
+      position: absolute;
+      right: 20px;
+      top:100%;
+      opacity: 0;
+      width: 67%; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: $bg-black;
+      color: $white;
+      transition: 0.2s ease;
+      z-index: 1;
+      ul{
+        padding-top: 30px;
+        padding-bottom: 25px;
+        li {
+          &.home, &.projects {
+            margin: 26.4px 0;
+          }
+          &.call{
+            @include header-button;
+            text-align: center;
+            background-color: $red;
+            padding:22.22px 11.92vw;
+          }
+        }
+      }
+    }
+  }
+} 
+
+// M E D I A - T A B L E T
+
+@media (min-width: 768px){
+  header{
+  .container{
+    padding: 0;
+    margin: 0;
+    .logo{
+      padding-left: 45px;
+    }
+    #toggle, .hamburger {
+      display: none;
+    }
+    nav{
+      @include header-nav-tab;
+      opacity: 1;
+      position: relative;
+      right: auto;
+      top: auto;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background-color: $red;
+      width: 57.033vw;
+      max-width: 438px;
+      max-height: 178px;
+      padding: 0;
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 57px 0 57px 10px;
+        padding: 0;
+        li {
+          margin: 0;
+          padding: 0 10px;
+          &.call{
+            @include header-button;
+            font-size: 1rem;
+            background-color: $bg-black;
+            padding:22.5px 19px;
+            margin-left: 10px;
+            margin-right: 20px;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+  }
+
+}
+
+// M E D I A - D E S K T O P
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  header{
+    .container{
+      .logo{
+        padding-left: 11vw;
+      }
+      nav{
+        @include header-nav-desk;
+        width: 49vw;
+        max-width: 705px;
+        max-height: 178px;
+        ul {
+          justify-content: space-between;
+          margin-left: 0;
+          margin-right: 8.3vw;
+          margin: 57px 11vw 57px 10px;
+          li.home,li.projects{
+            margin: 1.5%;
+          }
+          li.call{
+            @include header-button;
+            font-size: 1rem;
+            background-color: $bg-black;
+            padding:22.22px 44.7px;
+            margin-left: 6.4%;
+            margin-right: 0;
+            }
+        }
+      }
+    }
+    }
+  }

@@ -1,0 +1,88 @@
+// I M P O R T - P O L I C E S
+
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+
+// S I M P L E - V A R I A B L E
+
+$red : rgba(249, 79, 79, 1);
+$bg-black : rgba(25, 25, 33, 1);
+$white: #fff;
+$txt-black : #000;
+$red-hover: rgba(255, 147, 147, 1);
+$black-hover: rgba(67, 67, 86, 1);
+$font : "Commissioner";
+
+// M I X I N
+
+@mixin h1-set {
+    font-family: $font;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 5.5rem;
+    text-align: left;
+}
+
+@mixin h1-set-mobile {
+    font-family: $font;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+    text-align: left;
+}
+
+@mixin h2-set {
+    font-family: $font;
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 4rem;
+    text-align: left;
+}
+
+@mixin h3-set {
+    font-family: $font;
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 2rem;
+    text-align: left;
+}
+
+@mixin body-set {
+    font-family: $font;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: left;
+}
+
+@mixin body-set-mobile {
+    font-family: $font;
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 1.5625rem;
+    text-align: left;
+}
+
+@mixin header-button {
+    font-family: $font;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 19.57px;
+    text-align: left;
+}
+
+@mixin header-nav-tab {
+    font-family: $font;
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: left;
+}
+
+@mixin header-nav-desk {
+    font-family: $font;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: left;
+}
+

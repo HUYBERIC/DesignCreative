@@ -1,0 +1,117 @@
+.footer{
+  width: 100%;
+  padding: 48px 12px;
+  position:static;
+  .container{
+    width: 100%;
+    height: auto;
+    /* min-height: 191px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 47px;
+    h2{
+      @include h2-set;
+      font-size: 32px;
+      line-height: 40px;
+    }
+    span{
+      width: 199px;
+      height: 64px;
+      @include header-button;
+      color: $white;
+      font-size: 1rem;
+      background-color: $red;
+      padding:22.22px 44.7px;
+    }
+  }
+}
+
+// M E D I A - T A B L E T
+
+@media (min-width: 768px) {
+  .footer{
+    width: 100vw;
+    padding: 0;
+    .container{
+      width: 89.78vw; //689px
+      min-height: 10.42vw; //80px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 11.98vw;
+      margin-top: 10.42vw; // 80px
+      margin-bottom: 80px; // 80px
+      margin-right: auto;  // 6.25vw; // 48px;
+      margin-left: auto; // 5.86vw; // 45px;
+      h2{
+        width: 51.83vw; // 398px;
+        @include h2-set;
+        font-size: 32px;
+        line-height: 40px;
+      }
+      span{
+        width: 199px;
+        height: 64px;
+        @include header-button;
+        color: $white;
+        font-size: 1rem;
+        background-color: $red;
+        text-align: center;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+// M E D I A - D E S K T O P
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .footer{
+    width: 100vw;
+    padding: 0;
+    .container{
+      width: 100vw;
+      min-height: 133px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      margin-right: 0; 
+      margin-left: 0;
+      h2{
+        width: 44.10vw; // 635px;
+        @include h2-set;
+        position: relative;
+        &::before{
+          position: absolute;
+        content: "";
+        background-image: url(img/~.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        width: 134px;
+        height: 60px;
+        top: 1.74vw; // 25px;
+        left: -15.28vw; // -220px;
+        }
+      }
+      span{
+        width: 199px;
+        height: 64px;
+        @include header-button;
+        color: $white;
+        font-size: 1rem;
+        background-color: $red;
+        text-align: center;
+        white-space: nowrap;
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.first-section{
+  .container{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    .first-img img{
+      width: 100vw;
+      max-height: 53vw;
+      object-fit: cover;
+      object-position: 0px -20px;
+    }
+    .first-text{
+      padding: 0 24px;
+      margin-top: 50px;
+      margin-bottom: 40px;
+      h1 {
+        @include h1-set-mobile;
+      }
+      p {
+        @include body-set-mobile;
+        margin-top:30px; 
+      }
+    }
+    span {
+      align-self: flex-start;
+      @include header-button;
+      font-size: 1.125rem;
+      line-height: 22.01px;
+      padding: 25px 40px;
+      margin-left: 24px;
+      background-color: $red;
+      color: $white;
+    }
+  }
+}
+
+// M E D I A - T A B L E T
+
+@media (min-width: 768px){
+.first-section{
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 57.033vw;
+    grid-template-rows: auto;
+    align-items: center;
+    position: relative;
+    z-index:0;
+    .first-img{
+      position: relative;
+      grid-row: 1/2;
+      grid-column: 2/3;
+    img {
+      max-height: 100%;
+      width: 100%;
+      height: 78.9vw;
+      object-fit: cover;
+      object-position: -330px 0px;
+      right: 100px;
+      z-index: -1;
+    }
+    .overlay {
+      position: absolute;
+      top:0;
+      left:0;
+      bottom:0;
+      right: 0;
+      background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.0) 50%);
+      z-index:0;
+    }
+  }
+    .first-text-button{
+      grid-row: 1/-1;
+      grid-column: 1/-1;
+      max-width: 50vw;
+      margin-top: -120px;
+      position: relative;
+      margin-left: 45px;
+      padding: 0;
+      z-index:3;
+      .first-text{
+        z-index: 2;
+        padding: 0;
+        h1{
+          font-size: 3.5rem;
+          line-height: 3.5rem;
+        }
+        p{
+          margin: 30px 0;
+        }
+      }
+    }
+    span {
+      display: inline-block;
+      position:relative;
+      justify-self: start;
+      margin-top: -10px;
+      margin-left: 0;
+
+    }
+  }
+}
+}
+
+// M E D I A - D E S K T O P
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .first-section{
+    .container{
+      grid-template-columns: 1fr 62.15vw;
+      .first-img{
+      img {
+        height: 55.5vw;
+        object-position: -210px 0px;
+      }
+    }
+      .first-text-button{
+        padding-left: 7.5vw;
+        max-height: 55.5vw;
+        .first-text{
+          h1{
+            @include h1-set;
+          }
+          p{
+            @include body-set;
+            margin: 50px 0;
+            max-width: 540px;
+          }
+        }
+      }
+    }
+  }
+  }
