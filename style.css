@@ -487,7 +487,7 @@ header .container nav ul li.call {
 .second-section .container .text-pt1 h1::before {
   position: absolute;
   content: "";
-  background-image: url(img/~.png);
+  background-image: url(img/vague.png);
   background-size: contain;
   background-repeat: no-repeat;
   top: 0;
@@ -672,7 +672,7 @@ header .container nav ul li.call {
   .second-section .container .text-pt1 h1::before {
     position: absolute;
     content: "";
-    background-image: url(img/~.png);
+    background-image: url(img/vague.png);
     background-size: contain;
     background-repeat: no-repeat;
     top: 0;
@@ -1123,7 +1123,7 @@ header .container nav ul li.call {
   .third-section .container .slide.active .brand h1::after {
     position: absolute;
     content: "";
-    background-image: url(img/~.png);
+    background-image: url(img/vague.png);
     filter: brightness(0) invert(1);
     background-size: contain;
     background-repeat: no-repeat;
@@ -1217,7 +1217,7 @@ header .container nav ul li.call {
   .third-section .container .slide.active .brand h1::after {
     position: absolute;
     content: "";
-    background-image: url(img/~.png);
+    background-image: url(img/vague.png);
     filter: brightness(0) invert(1);
     background-size: contain;
     background-repeat: no-repeat;
@@ -1468,7 +1468,7 @@ header .container nav ul li.call {
   .footer .container h2::before {
     position: absolute;
     content: "";
-    background-image: url(img/~.png);
+    background-image: url(img/vague.png);
     background-size: contain;
     background-repeat: no-repeat;
     top: 0;
@@ -1524,7 +1524,7 @@ header .container nav ul li.call {
   .footer .container h2::before {
     position: absolute;
     content: "";
-    background-image: url(img/~.png);
+    background-image: url(img/vague.png);
     background-size: contain;
     background-repeat: no-repeat;
     top: 0;
