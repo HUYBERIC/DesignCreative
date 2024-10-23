@@ -115,3 +115,50 @@
     }
   }
 }
+
+// M E D I A - D E S K T O P - W I D E  
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .footer{
+    width: 100vw;
+    padding: 0;
+    .container{
+      width: 100vw;
+      max-width: 100vw;
+      min-height: 133px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      margin-right: 0; 
+      margin-left: 0;
+      h2{
+        width: 44.10vw; // 635px;
+        @include h2-set;
+        position: relative;
+        &::before{
+          position: absolute;
+        content: "";
+        background-image: url(img/~.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        width: 134px;
+        height: 60px;
+        top: 1.74vw; // 25px;
+        left: -15.28vw; // -220px;
+        }
+      }
+      span{
+        font-size: clamp(16px, 1.46vw, 20px);
+        padding: 0;
+        text-align: center;
+        align-content: center;
+      }
+    }
+  }
+}

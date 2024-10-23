@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function checkScreenSize() {
     const screenWidth = window.innerWidth;
 
-    if (screenWidth >= 375 && screenWidth <= 1440) {
+    if (screenWidth >= 375 && screenWidth <= 1920) {
       initCarousel();
     } else {
       showOnlyFirstSlide();

@@ -130,3 +130,29 @@
     }
   }
   }
+
+// M E D I A - D E S K T O P - W I D E  
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+.first-section{
+  .container{
+    width: 100vw;
+    max-width: 100vw;
+    .first-img{
+      img {
+        height: 55.5vw;
+        object-position: -310px 0px;
+      }
+    }
+      .first-text-button{
+        margin: 0;
+        padding-left: 5vw;
+        max-height: 55.5vw;
+        .first-text{
+          margin: 0;
+          padding: 0;
+        }
+      }
+  }
+}
+}
